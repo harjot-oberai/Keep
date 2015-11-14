@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="-1.5dp"
+    android:layout_marginRight="-1.5dp"
+    android:layout_marginTop="4dp"
+    android:padding="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="#FFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relLayout"
+        android:padding="3dp"
+        android:clickable="true">
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:background="#eee"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/lin1"
+            android:layout_weight="0.60">
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="top"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.9" />
+
+            <TextView
+                android:id="@+id/txtTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surname"
+                android:textSize="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/lin1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/button"
+                android:layout_alignWithParentIfMissing="false"
+                android:ellipsize="none"
+                android:background="@mipmap/ic_cross"
+                android:elevation="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginTop="-10dp"
+                android:layout_marginRight="-5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
